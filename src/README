@@ -1,0 +1,10 @@
+In this file I will try to describe the structure of the Go model MD simulations. I will assume one has already created a settings file and a dat file with the topology of the model. 
+0. In MD.com all the common parameters are defined.
+1. start: ss.f file. This file creates reads the run settings from settings.dat, reads in the random variables for the random subroutine and creates output files.
+2. The second step in the ss.f file is "stophere", which closes all files that are open.
+3. ss.f also includes subrutine "initES" which is called if "use electrostatics" is defined as YES. initES defines the cutoff for ES interactions to be applied. 
+<<<<<<< HEAD:README
+4.Added new feature branch
+=======
+4.c
+>>>>>>> feature-find-bin-to-locate-libs:src/README
